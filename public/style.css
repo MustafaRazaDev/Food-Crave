@@ -1,7 +1,161 @@
-body{
-    background-color: aquamarine;
+@font-face {
+  font-family: heebo;
+  src: url(fonts/Heebo-Regular.ttf);
 }
-h1{
-    font-size: 5vh;
-    text-align: center;
+@font-face {
+  font-family: kanit;
+  src: url(fonts/Kanit-Light.ttf);
+}
+@font-face {
+  font-family: kanitRegular;
+  src: url(fonts/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: montserrat;
+  src: url(fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: montserratMedium;
+  src: url(fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: poppinsBold;
+  src: url(fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/RobotoSlab-Regular.ttf);
+}
+body {
+  background-color: white;
+  margin: 0%;
+}
+#header {
+  background-color: white;
+  box-shadow: rgb(146, 161, 176, 15%) 0px 1px 4px;
+  position: absolute;
+  top: 0vh;
+  left: 0%;
+  width: 100%;
+  padding: 0.5%;
+  padding-top: 0.5;
+  padding-left: 10%;
+  padding-right: 15%;
+  z-index: var(--z-fixed);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(146, 161, 176, 0.15) 0px 1px 4px;
+}
+#header h1 {
+  height: 0vh;
+  margin: 0%;
+  font-family: PoppinsMedium;
+  font-size: 4vh;
+}
+.nav-link:hover {
+  color: #ff6a00;
+}
+.nav-link {
+  font-family: montserratMedium;
+  color: rgb(101, 95, 95);
+  margin-left: 5%;
+  font-size: 2.5vh;
+}
+#navbarMob {
+  display: none;
+}
+#headerMob h1 {
+  height: 0vh;
+  margin: 0%;
+  font-family: PoppinsMedium;
+  font-size: 4vh;
+}
+#navbarMobTop {
+  display: none !important;
+}
+#navbarMob h1 {
+  float: right;
+  height: 0vh;
+  margin: 0%;
+  font-family: PoppinsMedium;
+  font-size: 4vh;
+}
+#home {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+.textBox h1 {
+  font-family: PoppinsMedium;
+  color: #ff6a00;
+  font-size: 6vh;
+  margin-top: 10vh;
+}
+.textBox p {
+  font-family: montserratMedium;
+  font-size: 3vh;
+  color: rgb(101, 95, 95);
+  width: 80%;
+}
+.imageBox img {
+  height: 50vh;
+}
+#sliderImage {
+  height: 65vh;
+  width: 98% !important;
+  object-fit: cover;
+  margin: 1%;
+}
+.carousel-inner {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    display: none;
+  }
+  #navbarMob {
+    display: block;
+  }
+  #navbarMobTop {
+    display: block !important;
+    background-color: rgb(134, 134, 134) !important;
+    margin-top: -2%;
+  }
+  .nav-link {
+    font-family: montserratMedium;
+    color: rgb(255, 255, 255);
+    margin-left: -5%;
+    font-size: 2.5vh;
+  }
+  .nav-link:hover {
+    color: #f68634;
+  }
+  #navbarMobData {
+    background-color: rgb(134, 134, 134) !important;
+    display: flex;
+    flex-direction: column;
+  }
+  #home{
+    display: block;
+  }
+  .imageBox img{
+    height: 30vh;
+  }
+  .carousel-inner{
+    margin-top: 0%;
+  }
+  .textBox h1{
+    font-size: 4vh;
+  }
+  .textBox p{
+    font-size: 2vh;
+  }
+  #sliderImage{
+    height: 20vh;
+  }
+
 }
