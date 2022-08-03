@@ -35,6 +35,8 @@ body {
   margin: 0%;
 }
 #header {
+  width: 100%;
+  height: 15vh;
   background-color: white;
   box-shadow: rgb(146, 161, 176, 15%) 0px 1px 4px;
   position: absolute;
@@ -49,6 +51,14 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(146, 161, 176, 0.15) 0px 1px 4px;
 }
+#headerNav {
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+#headerLogo img {
+  height: 15vh;
+}
 #header h1 {
   height: 0vh;
   margin: 0%;
@@ -60,12 +70,16 @@ body {
 }
 .nav-link {
   font-family: montserratMedium;
-  color: rgb(101, 95, 95);
+  color: black;
   margin-left: 5%;
-  font-size: 2.5vh;
+  font-size: 2.7vh;
 }
 #navbarMob {
   display: none;
+}
+.navbar-toggler{
+  position: absolute;
+  bottom: 2vh;
 }
 #headerMob h1 {
   height: 0vh;
@@ -104,13 +118,52 @@ body {
   height: 50vh;
 }
 #sliderImage {
-  height: 65vh;
-  width: 98% !important;
+  height: 40vh;
+  width: 100% !important;
   object-fit: cover;
-  margin: 1%;
+  margin: 0%;
+  margin-top: 5%;
 }
 .carousel-inner {
   margin-top: 4%;
+}
+#navbarMob img{
+  height: 12vh;
+  float: right;
+}
+#dishes{
+  display: flex;
+  margin: 5%;
+  width: 90%;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+#dishes div{
+  height: 32vh;
+  width: 23%;
+  margin: 1%;
+  border: 0.1vh solid rgb(195, 195, 195);
+}
+#dishes img{
+  height: 25vh;
+  width: 98%;
+  margin: 1%;
+  object-fit: cover;
+}
+#dishes h1{
+  font-size: 3vh;
+  font-family: Roboto;
+  margin-top: 4%;
+  float: left;
+  margin-left: 2%;
+  text-align: center;
+}
+.dishTitle{
+  font-family: PoppinsMedium;
+  color: #ff6a00;
+  font-size: 6vh;
+  margin: 0% 5%;
+  margin-top: 10vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -119,6 +172,8 @@ body {
   }
   #navbarMob {
     display: block;
+    height: 13vh;
+    width: 100%;
   }
   #navbarMobTop {
     display: block !important;
@@ -127,35 +182,43 @@ body {
   }
   .nav-link {
     font-family: montserratMedium;
-    color: rgb(255, 255, 255);
+    color: black;
     margin-left: -5%;
     font-size: 2.5vh;
-  }
-  .nav-link:hover {
-    color: #f68634;
   }
   #navbarMobData {
     background-color: rgb(134, 134, 134) !important;
     display: flex;
     flex-direction: column;
   }
-  #home{
+  #home {
     display: block;
+    width: 85%;
   }
-  .imageBox img{
-    height: 30vh;
+  .imageBox img {
+    height: auto;
+    width: 100%;
   }
-  .carousel-inner{
+  .carousel-inner {
     margin-top: 0%;
   }
-  .textBox h1{
+  .textBox h1 {
     font-size: 4vh;
   }
-  .textBox p{
+  .textBox p {
     font-size: 2vh;
+    width: 100%;
   }
-  #sliderImage{
+  #sliderImage {
     height: 20vh;
+    margin: 0%;
   }
-
+  #dishes{
+    display: block;
+  }
+  #dishes div{
+    width: 98%;
+    height: 32vh;
+    margin: 5% 0%;
+  }
 }
