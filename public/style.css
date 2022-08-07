@@ -30,13 +30,16 @@
   font-family: Roboto;
   src: url(fonts/RobotoSlab-Regular.ttf);
 }
+@font-face {
+  font-family: russo;
+  src: url(fonts/RussoOne-Regular.ttf);
+}
 body {
   background-color: white;
   margin: 0%;
 }
 #header {
-  width: 100%;
-  height: 15vh;
+  height: 9vh;
   background-color: white;
   box-shadow: rgb(146, 161, 176, 15%) 0px 1px 4px;
   position: absolute;
@@ -56,12 +59,15 @@ body {
   right: 15%;
   bottom: 10%;
 }
-#headerLogo img {
+#headerLogo h1 {
   height: 15vh;
+  font-family: russo !important;
+  color: #ff6a00 !important;
+
 }
 #header h1 {
   height: 0vh;
-  margin: 0%;
+  margin: 1% 0%;
   font-family: PoppinsMedium;
   font-size: 4vh;
 }
@@ -69,7 +75,7 @@ body {
   color: #ff6a00;
 }
 .nav-link {
-  font-family: montserratMedium;
+  font-family: PoppinsMedium;
   color: black;
   margin-left: 5%;
   font-size: 2.7vh;
@@ -93,8 +99,9 @@ body {
 #navbarMob h1 {
   float: right;
   height: 0vh;
-  margin: 0%;
-  font-family: PoppinsMedium;
+  margin: 1% 0%;
+  font-family: russo;
+  color: #ff6a00;
   font-size: 4vh;
 }
 #home {
@@ -118,11 +125,11 @@ body {
   height: 50vh;
 }
 #sliderImage {
-  height: 40vh;
+  height: 50vh;
   width: 100% !important;
   object-fit: cover;
   margin: 0%;
-  margin-top: 5%;
+  margin-top: 0vh;
 }
 .carousel-inner {
   margin-top: 4%;
@@ -152,7 +159,7 @@ body {
 }
 #dishes h1{
   font-size: 3vh;
-  font-family: Roboto;
+  font-family: PoppinsMedium;
   margin-top: 4%;
   float: left;
   margin-left: 2%;
@@ -165,19 +172,50 @@ body {
   margin: 0% 5%;
   margin-top: 10vh;
 }
-
+.about {
+  color: white;
+  font-family: montserrat;
+  width: 100%;
+  height: 30vh;
+  margin-top: 10%;
+  text-align: center;
+  background-color: #ff6a00;
+}
+.about .links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 2%;
+}
+.about h1 {
+  padding-top: 2vw;
+  margin-bottom: 2%;
+  font-size: 4vh;
+  font-family: russo;
+}
+.about h2 {
+  font-size: 2vh;
+}
+.about h2 b {
+  font-family: montserratMedium;
+}
+.about .links img {
+  filter: invert(1);
+  height: 6vh;
+}
 @media screen and (max-width: 600px) {
   #header {
     display: none;
   }
   #navbarMob {
     display: block;
-    height: 13vh;
+    height: 8vh;
     width: 100%;
   }
   #navbarMobTop {
     display: block !important;
-    background-color: rgb(134, 134, 134) !important;
+    background-color: rgb(255, 255, 255) !important;
     margin-top: -2%;
   }
   .nav-link {
@@ -187,7 +225,7 @@ body {
     font-size: 2.5vh;
   }
   #navbarMobData {
-    background-color: rgb(134, 134, 134) !important;
+    background-color: rgb(255, 255, 255) !important;
     display: flex;
     flex-direction: column;
   }
@@ -214,11 +252,29 @@ body {
     margin: 0%;
   }
   #dishes{
-    display: block;
+    display: inline;
   }
   #dishes div{
     width: 98%;
     height: 32vh;
-    margin: 5% 0%;
+    margin: 5% 1%;
+  }
+  .about{
+    height: 25vh;
+  }
+  .links img {
+    height: 5vh;
+  }
+  .about .links {
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 8%;
+  }
+  .about h1 {
+    font-size: 7vw;
+    margin-bottom: 8%;
+  }
+  .about h2 {
+    font-size: 1.8vh;
   }
 }
